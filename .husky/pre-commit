@@ -1,4 +1,14 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-pnpm lint-staged
+echo "Running lint-staged..."
+echo "Staged files:"
+git diff --cached --name-only
+
+STAGED_FILES=$(git diff --cached --name-only)
+if [ -n "$STAGED_FILES" ]; then
+  echo "Found staged files, running lint-staged..."
+  NODE_NO_WARNINGS=1 pnpm exec lint-staged --debug
+else
+  echo "No files staged"
+fi

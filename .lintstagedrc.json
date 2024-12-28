@@ -1,0 +1,4 @@
+{
+  "README.md": "echo \"Testing on README.md\"",
+  "*": "echo \"Testing on other files\""
+}

@@ -56,7 +56,6 @@ The development container provides a consistent, pre-configured development envi
 #### VS Code Extensions
 The container comes pre-installed with essential extensions:
 
-
 **Astro & Web Development:**
 - Astro: Official Astro extension
 - Tailwind CSS: Intelligent CSS tooling
