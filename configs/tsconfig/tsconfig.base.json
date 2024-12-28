@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2023",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".", // Base URL for path mappings
+    "paths": {
+      "@packages/*": ["../packages/*"], // Shared packages alias
+      "@apps/*": ["../apps/*"] // Apps alias
+    }
+  },
+  "include": [],
+  "exclude": ["node_modules", "dist"]
+}

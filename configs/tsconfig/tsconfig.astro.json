@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["astro/client"], // Add Astro-specific types
+    "jsx": "preserve" // Required for Astro's JSX/TSX files
+  },
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"]
+}
