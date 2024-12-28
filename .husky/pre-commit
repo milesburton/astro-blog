@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 echo "Running pre-commit hook..."
 export DEBUG="lint-staged:*"
-GIT_ROOT=$(git rev-parse --show-toplevel)
-cd "$GIT_ROOT"
-export GIT_WORK_TREE="$GIT_ROOT"
-export GIT_DIR="$GIT_ROOT/.git"
+export SHELL=/bin/bash
 pnpm exec lint-staged --debug

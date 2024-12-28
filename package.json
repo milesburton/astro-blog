@@ -23,5 +23,8 @@
     "turbo": "^1.10.0",
     "typescript": "^5.7.2"
   },
-  "lint-staged": "{\n  \"*.md\": \"git diff --cached --name-only | xargs echo \\\"Testing:\\\"\",\n  \"*\": \"git diff --cached --name-only | xargs echo \\\"Testing:\\\"\"\n}"
+  "lint-staged": {
+    "*.md": ["/bin/bash -c \"echo Testing markdown file\""],
+    "*": ["/bin/bash -c \"echo Testing other file\""]
+  }
 }
