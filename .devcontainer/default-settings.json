@@ -10,5 +10,16 @@
     },
     "dotfiles.repository": "https://github.com/milesburton/dotfiles",
     "dotfiles.targetPath": "~/dotfiles",
-    "dotfiles.installCommand": "~/dotfiles/install.sh"
+    "dotfiles.installCommand": "~/dotfiles/install.sh",
+    "workbench.colorCustomizations": {
+        "editor.background": "#2B2147",
+        "sideBar.background": "#2B2147",
+        "activityBar.background": "#231A3B",
+        "titleBar.activeBackground": "#342456",
+        "statusBar.background": "#231A3B",
+        "tab.activeBackground": "#342456",
+        "tab.inactiveBackground": "#2B2147",
+        "panel.background": "#2B2147",
+        "terminal.background": "#231A3B"
+    }
 }
