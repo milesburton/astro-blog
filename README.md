@@ -129,6 +129,13 @@ The container maintains persistent volumes for:
 
 ### Common Dev Container Issues
 
+1. **Git hooks not working:**
+   - If git hooks (husky) are not working, run:
+     ```bash
+     git config --unset core.hookspath
+     ```
+   - This ensures Git uses the correct hooks path for the project
+
 1. **Container fails to build:**
    - Ensure Docker Desktop is running
    - Try rebuilding the container: Command Palette -> "Remote-Containers: Rebuild Container"
@@ -177,4 +184,4 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+SOFTWARE.# Test hook
