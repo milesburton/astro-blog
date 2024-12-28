@@ -5,15 +5,17 @@ A development container configuration for Astro projects with comprehensive tool
 ## 🚀 Quick Start
 
 1. **Prerequisites:**
+
    - Docker Desktop installed and running
    - Visual Studio Code with Remote Development extension pack
    - Git
 
 2. **Setup:**
+
    ```bash
    # Clone the repository
    git clone https://github.com/milesburton/astro-blog
-   
+
    # Open in VS Code
    code [project-directory]
    ```
@@ -28,6 +30,7 @@ A development container configuration for Astro projects with comprehensive tool
 This project follows a documentation-first approach. The documentation site serves as the primary entry point for developers:
 
 1. **Start the docs:**
+
    ```bash
    # From the root directory
    pnpm dev
@@ -47,6 +50,7 @@ This project follows a documentation-first approach. The documentation site serv
 The development container provides a consistent, pre-configured development environment with the following features:
 
 #### Development Tools
+
 - Node.js 18 environment
 - Git with persistent configuration
 - Fish shell with persistent history and configuration
@@ -54,9 +58,11 @@ The development container provides a consistent, pre-configured development envi
 - Persistent VS Code settings
 
 #### VS Code Extensions
+
 The container comes pre-installed with essential extensions:
 
 **Astro & Web Development:**
+
 - Astro: Official Astro extension
 - Tailwind CSS: Intelligent CSS tooling
 - MDX Support: Enhanced MDX editing
@@ -68,6 +74,7 @@ The container comes pre-installed with essential extensions:
 - Babel JavaScript: Modern JavaScript support
 
 **Code Quality:**
+
 - Prettier: Code formatting
 - ESLint: JavaScript linting
 - Code Spell Checker
@@ -75,19 +82,24 @@ The container comes pre-installed with essential extensions:
 - TODO Highlight: Highlight TODO comments
 
 **Git Integration:**
+
 - GitLens: Enhanced Git capabilities
 - Git Graph: Repository visualisation
 
 **Database & Docker:**
+
 - MongoDB for VS Code
 - Docker: Container management
 
 **Markdown & Documentation:**
+
 - Markdown All in One: Enhanced markdown support
 - Material Icon Theme: File icons
 
 #### Persistent Storage
+
 The container maintains persistent volumes for:
+
 - Shell configuration (.bashrc)
 - Command history
 - Git configuration
@@ -130,6 +142,7 @@ The container maintains persistent volumes for:
 ### Common Dev Container Issues
 
 1. **Git hooks not working:**
+
    - If git hooks (husky) are not working, run:
      ```bash
      git config --unset core.hookspath
@@ -137,22 +150,25 @@ The container maintains persistent volumes for:
    - This ensures Git uses the correct hooks path for the project
 
 1. **Container fails to build:**
+
    - Ensure Docker Desktop is running
    - Try rebuilding the container: Command Palette -> "Remote-Containers: Rebuild Container"
 
-2. **Port conflicts:**
+1. **Port conflicts:**
+
    - The docs run on port 4321 by default
    - If you see port conflicts, check for other running services
    - The container forwards port 3000 by default for additional services
 
-3. **Node modules issues:**
+1. **Node modules issues:**
+
    - Within the container, try:
      ```bash
      pnpm clean
      pnpm install
      ```
 
-4. **Persistence issues:**
+1. **Persistence issues:**
    - If settings aren't persisting between sessions, check Docker volume mounts
    - Verify Docker has necessary permissions
 
@@ -185,11 +201,29 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.# Test hook
+
 # Another test
+
 # Test hooks
+
 # Another test
+
 # Test
+
 # Test
+
 # Test
+
 # Test
+
 # Test
+
+# Test
+
+# Test
+
+# Test
+
+Test
+Test
+Test
