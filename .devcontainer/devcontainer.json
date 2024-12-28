@@ -1,0 +1,45 @@
+{
+  "name": "Astro Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "mounts": [
+    "source=devcontainer-bashrc,target=/home/vscode/.bashrc,type=volume",
+    "source=devcontainer-bashhistory,target=/commandhistory,type=volume",
+    "source=devcontainer-gitconfig,target=/home/vscode/.gitconfig,type=volume",
+    "source=devcontainer-fishconfig,target=/home/vscode/.config/fish,type=volume",
+    "source=devcontainer-ssh,target=/home/vscode/.ssh,type=volume",
+    "source=devcontainer-vscode-settings,target=/home/vscode/.vscode-settings-storage,type=volume"
+    
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "astro-build.astro-vscode",
+        "bradlc.vscode-tailwindcss",
+        "unifiedjs.vscode-mdx",
+        "csstools.postcss",
+        "formulahendry.auto-rename-tag",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "streetsidesoftware.code-spell-checker",
+        "christian-kohler.path-intellisense",
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "mongodb.mongodb-vscode",
+        "ms-azuretools.vscode-docker",
+        "christian-kohler.npm-intellisense",
+        "mgmcdermott.vscode-language-babel",
+        "wix.vscode-import-cost",
+        "orta.vscode-jest",
+        "aaron-bond.better-comments",
+        "yzhang.markdown-all-in-one",
+        "wayou.vscode-todo-highlight",
+        "pkief.material-icon-theme"
+      ]
+    }
+  },
+  "forwardPorts": [3000],
+  "postCreateCommand": "if [ ! -s /home/vscode/.bashrc ]; then cp /defaults/.bashrc /home/vscode/.bashrc; fi && if [ -f \"package.json\" ]; then npm install; fi",
+  "remoteUser": "vscode"
+}

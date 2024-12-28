@@ -1,0 +1,14 @@
+{
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "terminal.integrated.profiles.linux": {
+        "fish": {
+            "path": "/usr/bin/fish"
+        },
+        "bash": {
+            "path": "/bin/bash"
+        }
+    },
+    "dotfiles.repository": "https://github.com/milesburton/dotfiles",
+    "dotfiles.targetPath": "~/dotfiles",
+    "dotfiles.installCommand": "~/dotfiles/install.sh"
+}
