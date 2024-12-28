@@ -1,6 +1,8 @@
 {
     "cSpell.words": [
+        "commitlint",
         "devcontainer",
-        "dotfiles"
+        "dotfiles",
+        "lintstagedrc"
     ]
 }

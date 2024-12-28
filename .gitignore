@@ -2,6 +2,7 @@
 node_modules/
 .pnp
 .pnp.js
+.pnpm-store
 
 # Testing
 coverage/
@@ -32,3 +33,5 @@ yarn-error.log*
 .idea/
 *.swp
 *.swo
+
+setup-monorepo.fish
