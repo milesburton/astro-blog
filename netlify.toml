@@ -1,0 +1,3 @@
+[build]
+  command = "pnpm --filter docs build"
+  publish = "apps/docs/dist"
