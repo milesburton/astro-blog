@@ -1,35 +1,30 @@
-import astroPlugin from 'eslint-plugin-astro';
+import { defineConfig } from 'astro/config';
+import starlight from '@astrojs/starlight';
 
-import sharedConfig from '../../configs/eslint/eslint.config.mjs';
-
-export default [
-  ...sharedConfig,
-  {
-    files: ['**/*.astro'], // Astro files
-    languageOptions: {
-      ecmaVersion: 2023,
-      sourceType: 'module',
-    },
-    plugins: {
-      astro: astroPlugin,
-    },
-    processor: astroPlugin.processors['.astro'],
-    rules: {
-      'astro/no-set-html-directive': 'warn',
-    },
+export default defineConfig({
+  server: {
+    host: '0.0.0.0',
+    port: 4321,
   },
-  {
-    files: ['**/*.mjs'], // Target .mjs files, including astro.config.mjs
-    languageOptions: {
-      ecmaVersion: 2023,
-      sourceType: 'module',
-      parserOptions: {
-        project: null, // Disable TypeScript project checking for .mjs files
+  integrations: [
+    starlight({
+      title: 'My Docs',
+      social: {
+        github: 'https://github.com/withastro/starlight',
       },
-    },
-    rules: {
-      'no-console': 'off', // Adjust rules as needed for config files
-      'no-unused-vars': 'off', // Useful for dynamic imports and unused parameters
-    },
-  },
-];
+      sidebar: [
+        {
+          label: 'Guides',
+          items: [
+            // Each item here is one entry in the navigation menu.
+            { label: 'Example Guide', slug: 'guides/example' },
+          ],
+        },
+        {
+          label: 'Reference',
+          autogenerate: { directory: 'reference' },
+        },
+      ],
+    }),
+  ],
+});

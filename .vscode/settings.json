@@ -1,8 +1,10 @@
 {
-    "cSpell.words": [
-        "commitlint",
-        "devcontainer",
-        "dotfiles",
-        "lintstagedrc"
-    ]
+  "cSpell.words": [
+    "astrojs",
+    "commandhistory",
+    "commitlint",
+    "devcontainer",
+    "dotfiles",
+    "lintstagedrc"
+  ]
 }
