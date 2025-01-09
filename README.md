@@ -42,6 +42,9 @@ This project follows a documentation-first approach. The documentation site serv
 2. **Access the docs:**
    - Open http://localhost:4321 in your browser
    - This is your primary development hub!
+   - 
+**Continious Deployment**
+This project is automatically deployed to Netlify using a CD process whenever the main branch changes. The output can be viewed at: https://brilliant-pika-76e38a.netlify.app/
 
 ## 🛠️ Development Environment
 
@@ -72,9 +75,6 @@ The container comes pre-installed with essential extensions:
 - NPM Intellisense: NPM dependency autocompletion
 - Import Cost: Display import/require package sizes
 - Babel JavaScript: Modern JavaScript support
-
-** Deployment **
-This project is automatically deployed to Netlify using a CD process whenever the main branch changes. The output can be viewed at: https://brilliant-pika-76e38a.netlify.app/
 
 **Code Quality:**
 
