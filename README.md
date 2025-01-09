@@ -24,6 +24,10 @@ A development container configuration for Astro projects with comprehensive tool
    - When VS Code opens, you'll see a prompt to "Reopen in Container"
    - Click "Reopen in Container" to start the dev container
    - Wait for the container to build (this may take a few minutes on first run)
+   
+## 🚀 Continious Deployment
+
+This project is automatically deployed to Netlify using a CD process whenever the main branch changes. The output can be viewed at: https://brilliant-pika-76e38a.netlify.app/
 
 ## 📚 Documentation First
 
@@ -121,9 +125,6 @@ The container maintains persistent volumes for:
 │   └── tsconfig/
 └── pnpm-workspace.yaml        # Workspace configuration
 ```
-
-**Continious Deployment**
-This project is automatically deployed to Netlify using a CD process whenever the main branch changes. The output can be viewed at: https://brilliant-pika-76e38a.netlify.app/
 
 ## 🧰 Available Scripts
 
