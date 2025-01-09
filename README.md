@@ -42,10 +42,7 @@ This project follows a documentation-first approach. The documentation site serv
 2. **Access the docs:**
    - Open http://localhost:4321 in your browser
    - This is your primary development hub!
-   - 
-**Continious Deployment**
-This project is automatically deployed to Netlify using a CD process whenever the main branch changes. The output can be viewed at: https://brilliant-pika-76e38a.netlify.app/
-
+     
 ## 🛠️ Development Environment
 
 ### Dev Container Features
@@ -93,7 +90,6 @@ The container comes pre-installed with essential extensions:
 
 - MongoDB for VS Code
 - Docker: Container management
-
 **Markdown & Documentation:**
 
 - Markdown All in One: Enhanced markdown support
@@ -125,6 +121,9 @@ The container maintains persistent volumes for:
 │   └── tsconfig/
 └── pnpm-workspace.yaml        # Workspace configuration
 ```
+
+**Continious Deployment**
+This project is automatically deployed to Netlify using a CD process whenever the main branch changes. The output can be viewed at: https://brilliant-pika-76e38a.netlify.app/
 
 ## 🧰 Available Scripts
 
