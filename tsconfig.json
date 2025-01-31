@@ -3,8 +3,7 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "strict": true,
-    "allowJs": true,
-    "types": ["astro/client"]
+    "allowJs": true
   },
-  "include": ["src", "apps/docs", "astro.config.ts"]
+  "include": ["src"]
 }

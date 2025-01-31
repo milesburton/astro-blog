@@ -30,9 +30,6 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@sentry/astro": "^8.53.0",
-    "@sentry/node": "^8.53.0",
-    "astro": "^5.2.2",
     "netlify-cli": "^17.38.1"
   }
 }

@@ -1,17 +1,24 @@
 {
-  "name": "docs",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+  "extends": [
+    "plugin:astro/recommended"
+  ],
+  "plugins": [
+    "astro"
+  ],
+  "overrides": {
+    "files": [
+      "*.astro"
+    ],
+    "parser": "astro-eslint-parser"
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": "latest"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.30.3",
-    "astro": "^5.0.2",
-    "sharp": "^0.32.5"
+    "@sentry/astro": "^8.53.0"
+  },
+  "devDependencies": {
+    "@astrojs/starlight": "^0.31.1"
   }
 }
