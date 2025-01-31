@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@sentry/astro": "^8.53.0",
+    "@sentry/node": "^8.53.0",
     "netlify-cli": "^17.38.1"
   }
 }
