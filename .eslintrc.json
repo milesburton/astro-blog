@@ -1,0 +1,9 @@
+{
+  "parserOptions": {
+    "exclude": ["astro/config.mjs"]
+    // Add other parser options if needed
+  },
+  "rules": {
+    // Your custom ESLint rules go here
+  }
+}
