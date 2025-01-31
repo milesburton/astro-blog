@@ -1,14 +1,10 @@
 {
-  "extends": "./configs/tsconfig/tsconfig.base.json",
   "compilerOptions": {
-    "composite": true
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "allowJs": true,
+    "types": ["astro/client"]
   },
-  "include": [
-    "configs/**/*.ts",
-    "apps/**/*.ts",
-    "packages/**/*.ts",
-    "*.js",
-    ".lintstagedrc.js"
-  ],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src", "apps/docs", "astro.config.ts"]
 }

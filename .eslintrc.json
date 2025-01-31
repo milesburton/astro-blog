@@ -1,9 +1,6 @@
 {
   "parserOptions": {
-    "exclude": ["astro/config.mjs"]
-    // Add other parser options if needed
+    "project": "./tsconfig.json"
   },
-  "rules": {
-    // Your custom ESLint rules go here
-  }
+  "ignorePatterns": ["astro.config.mjs"]
 }

@@ -6,7 +6,8 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "test": "turbo run test",
-    "prepare": "husky"
+    "prepare": "husky",
+    "type-check": "tsc --noEmit"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
@@ -31,6 +32,7 @@
   "dependencies": {
     "@sentry/astro": "^8.53.0",
     "@sentry/node": "^8.53.0",
+    "astro": "^5.2.2",
     "netlify-cli": "^17.38.1"
   }
 }
