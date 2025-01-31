@@ -26,5 +26,12 @@ export default defineConfig({
         },
       ],
     }),
+    sentry({
+      dsn: "https://826416882452d8bc1ccbf27065409af8@o4508692735131648.ingest.de.sentry.io/4508693092040784",
+      sourceMapsUploadOptions: {
+        project: "javascript-astro",
+        authToken: process.env.SENTRY_AUTH_TOKEN,
+      },
+    }),
   ],
 });
