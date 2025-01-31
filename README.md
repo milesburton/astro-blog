@@ -73,7 +73,7 @@ The container comes pre-installed with essential extensions:
 - Import Cost: Display import/require package sizes
 - Babel JavaScript: Modern JavaScript support
 
-** Deployment **
+**Deployment**
 This project is automatically deployed to Netlify using a CD process whenever the main branch changes. The output can be viewed at: https://brilliant-pika-76e38a.netlify.app/
 
 **Code Quality:**
