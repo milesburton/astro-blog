@@ -1,3 +1,27 @@
+# ⚠️ SECURITY NOTICE - 16 HIGH SEVERITY VULNERABILITIES
+
+> **WARNING:** This repository contains **30 security alerts** including **16 HIGH** severity vulnerabilities that need to be addressed before production use.
+
+## 🛑 Status: NEEDS SECURITY UPDATES
+
+This Astro blog project has significant security vulnerabilities in its dependencies.
+
+### Critical Actions Needed
+- ⚠️ **16 HIGH severity vulnerabilities** in Fastify, node-tar, h3, qs, jws, node-forge
+- ⚠️ Requires major dependency updates before production deployment
+- ⚠️ **DO NOT** deploy to production without addressing security issues
+
+**📋 See [SECURITY.md](SECURITY.md) for full details and remediation steps.**
+
+### Quick Fix Attempt
+```bash
+npm audit fix --force
+npm install astro@latest fastify@latest
+npm audit  # Check remaining issues
+```
+
+---
+
 # experimental.milesburton.com
 
 A development container configuration for Astro projects with comprehensive tooling and extensions, centred around a documentation-first approach.
